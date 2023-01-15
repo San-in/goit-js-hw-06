@@ -16,14 +16,15 @@ const images = [
 
 const galleryRef = document.querySelector('.gallery');
 
-const createImagesHTMLString = (imagesArr) => 
+const createImagesHTMLString = (imagesArr) => {
 
-imagesArr.reduce((acc, {url,alt}) => {
+  let message = ``;
 
-  acc += `<li class="gallery_item"><img src="${url}" alt="${alt}"></li>`;
-  return acc;
-
-}, ``);
+  imagesArr.map(({url,alt}) => {
+    message += `<li class="gallery_item"><img src="${url}" alt="${alt}"></li>`;
+  });
+  return message;
+};
 
 
 

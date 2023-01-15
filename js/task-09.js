@@ -3,22 +3,15 @@ function getRandomHexColor() {
 }
 
 const refs = {
-
   body: document.body,
   btnChangeColor: document.querySelector('.change-color'),
   color: document.querySelector('.color'),
-
 };
 
 const handlerClickBtnChangeColor = () => {
-
   const randomColor = getRandomHexColor();
   refs.body.style.backgroundColor = randomColor;
   refs.color.textContent = randomColor;
-
-
 };
-
-
 
 refs.btnChangeColor.addEventListener('click',handlerClickBtnChangeColor);

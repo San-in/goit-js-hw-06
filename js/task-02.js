@@ -14,11 +14,11 @@ const createLiElement = (liContent) => {
   const li = document.createElement('li');
   li.classList.add('item');
   li.textContent = liContent;
-  
-  return li; };
+  return li;
+
+};
 
 
 const output = ingredients.map((ingredient) => createLiElement(ingredient));
-
 
 ingredientsRef.append(...output);
