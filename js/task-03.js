@@ -17,15 +17,12 @@ const images = [
 const galleryRef = document.querySelector('.gallery');
 
 const createImagesHTMLString = (imagesArr) => {
-
   let message = ``;
-
+  
   imagesArr.map(({url,alt}) => {
     message += `<li class="gallery_item"><img src="${url}" alt="${alt}"></li>`;
   });
   return message;
 };
-
-
 
 galleryRef.innerHTML = createImagesHTMLString(images);

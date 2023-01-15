@@ -3,8 +3,6 @@ const refs = {
     text: document.getElementById('text'),
 };
 
-const handlerChangeTextSize = (event) => {
-    refs.text.style.fontSize = `${event.currentTarget.value}px`;
-};
+const handlerChangeTextSize = (event) => refs.text.style.fontSize = `${event.currentTarget.value}px`;
 
 refs.fontSizeControl.addEventListener('input',handlerChangeTextSize);

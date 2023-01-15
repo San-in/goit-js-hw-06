@@ -7,14 +7,14 @@ const refs = {
 let counterValue = 0;
 
 const handlerDecreaseValue = () => {
-counterValue -= 1;
-refs.value.textContent = counterValue;
+    counterValue -= 1;
+    refs.value.textContent = counterValue;
 };
 
 const handlerIncreaseValue = () => {
     counterValue += 1;
     refs.value.textContent = counterValue;
-    };
+};
 
 refs.decrementBtn.addEventListener('click', handlerDecreaseValue);
 refs.incrementBtn.addEventListener('click',handlerIncreaseValue);
